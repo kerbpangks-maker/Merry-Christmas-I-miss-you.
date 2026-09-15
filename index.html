@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#050505">
+<title>Merry Christmas, I Miss You</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+<div class="noise"></div>
+<section class="window">
+<div class="window-top"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="file-name">merry_christmas.html</span></div>
+<pre class="code"><span class="purple">const</span> <span class="blue">christmas</span> = {
+  <span class="green">"time"</span>: <span class="orange">"December"</span>,
+  <span class="green">"place"</span>: <span class="orange">"somewhere far away"</span>,
+  <span class="green">"message"</span>: <span class="orange">"I miss you"</span>
+};
+
+<span class="purple">function</span> <span class="blue">sendWish</span>() {
+  <span class="purple">return</span> <span class="orange">"Merry Christmas"</span>;
+}
+
+<span class="comment">// press play and let the memory run...</span></pre>
+</section>
+<section id="cards" class="cards"></section>
+<div class="center-message"><div class="spark">✦</div><h1>Merry Christmas,<br><span>I Miss You</span></h1><p>press play • watch the cards move</p></div>
+<div class="controls"><button id="playBtn" class="control primary">▶ Play</button><button id="replayBtn" class="control">↻ Replay</button><label class="volume">♪ <input id="volume" type="range" min="0" max="1" step="0.01" value="0.75"></label></div>
+<div class="progress-wrap"><div id="progress" class="progress"></div></div>
+<audio id="song" src="song.mp3" preload="metadata"></audio>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
